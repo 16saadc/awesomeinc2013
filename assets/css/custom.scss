@@ -148,7 +148,7 @@ iframe {
 }
 
 
-/******************************* 
+/*******************************
  * Header with image
  *******************************/
 
@@ -186,7 +186,7 @@ iframe {
 
 }
 
-/******************************* 
+/*******************************
  * Red button
  * Rounded edges
  * White font
@@ -212,12 +212,12 @@ iframe {
 /******************************
  * Statement for beginning of page
  * Example on about page
- * gray bg 
+ * gray bg
  ******************************/
 .statement {
 	background-color: $color_light_gray;
 	text-align: center;
-	p { 
+	p {
 		font-family: 'open sans';
 		font-style: normal;
 		font-weight: 600;
@@ -237,7 +237,7 @@ iframe {
 		font-size: 23px;
 	}
 	@include mobile {
-		p { 
+		p {
 			font-size: 15px;
 			line-height: 16px;
 			margin: 10px 10px 10px 10px;
@@ -314,7 +314,7 @@ section.grey-bg {
 	img {
 		width:70%;
 		height:auto;
-		margin-left: 15%; 
+		margin-left: 15%;
 	}
 }
 
@@ -332,7 +332,7 @@ h5 {
  *****************************/
 .navbar {
 	background-color: #f8f8f8;
-	border-color: #e7e7e7; 
+	border-color: #e7e7e7;
 	span {
 		background-color: $color_gray;
 	}
@@ -512,11 +512,43 @@ h5 {
 		.col-sm-3, col-xs-6 {
 			padding-left: 0;
 		}
+
+		@keyframes fade-in {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+
+		#image1:hover, #image2:hover, #image3:hover, #image4:hover {
+			box-shadow: 5px 5px 5px #2e2e2e;
+		}
+
+
+		h2 {
+			animation-name: fade-in;
+			animation-duration: 4s;
+		}
+
 		img {
 			width: 95%;
 			/*box-shadow: 5px 5px 5px #2e2e2e;*/
 			margin-bottom: 35px;
+
+			animation-name: shadow;
+			animation-duration: 4s;
 		}
+
+		@keyframes slideExpandUp {
+			0% 		{transform: translateY(100%) scaleX(0.5);}
+			30% 	{transform: translateY(-8%) scaleX(0.5);}
+			40% 	{transform: translateY(2%) scaleX(0.5);}
+			50% 	{transform: translateY(0%) scaleX(1.1);}
+			60% 	{transform: translateY(0%) scaleX(0.9);}
+			70% 	{transform: translateY(0%) scaleX(1.05);}
+			80% 	{transform: translateY(0%) scaleX(0.95);}
+			90% 	{transform: translateY(0%) scaleX(1.02);}
+			100% 	{transform: translateY(0%) scaleX(1);}
+		}
+
 		p {
 			font-weight: bold;
 			font-size: 16px;
@@ -528,7 +560,10 @@ h5 {
 			&:last-child {
 				margin-top: 0;
 			}
+			animation-name: slideExpandUp;
+			animation-duration: 4s;
 		}
+
 		@include mobile {
 			img {
 				padding-right: 0;
@@ -537,6 +572,7 @@ h5 {
 			}
 		}
 	}
+
 	.blog-post {
 		background-color: $color_light_gray;
 		height: 250px;
@@ -661,7 +697,7 @@ h5 {
 		font-weight: 400;
 		font-size: 22px;
 		line-height: 36px;
-		color: rgb(38, 38, 38);	
+		color: rgb(38, 38, 38);
 	}
 
 	#who p, #why p, #what p, #join p {
@@ -752,7 +788,7 @@ h5 {
 	}
 }
 
-#members { 
+#members {
 	background-color: #e2e2e2;
 	padding-bottom: 25px;
 }
@@ -822,7 +858,7 @@ h5 {
 				margin-top: 0;
 				line-height: 12px;
 			}
-		}	
+		}
 		img {
 			height: 60px;
 			width: 60px;
@@ -853,9 +889,9 @@ h5 {
 
 .TeamAlphaServices {
 	img {
-		
+
 	}
-	
+
 	.build {
 		i {
 			font-size: 8em;
@@ -930,7 +966,7 @@ h5 {
 	@include desktop {
 		margin: auto;
 		width: 80%;
-	}	
+	}
 
 	@include tablet {
 		margin: auto;
@@ -1046,7 +1082,7 @@ h5 {
 
 
 footer {
-	@media (min-width: 700px) 
+	@media (min-width: 700px)
 	{
 		background: url("../img/map.png") repeat;
 		padding-top: 20px;
@@ -1083,7 +1119,7 @@ footer {
 			text-decoration: none;
 			outline: 0;
 		}
-	}	
+	}
 }
 
 #sponsors {
