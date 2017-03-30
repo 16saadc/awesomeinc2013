@@ -138,7 +138,7 @@ $(document).ready(function() {
 	                return "bottom";
 	        }
 	}
-	    
+
 	function distMetric(a, b) {
 	    var diff = a - b;
 	    return (diff * diff);
@@ -149,7 +149,7 @@ $(document).ready(function() {
 	$("#headerwrap").css("height", getWindowHeight()) - 50; //for navbar
 	$("#headerwrap").css("width", getWindowWidth());
 	$(window).resize(function() {
-		$("#headerwrap").css("height", getWindowHeight())- 50; 
+		$("#headerwrap").css("height", getWindowHeight())- 50;
 		$("#headerwrap").css("width", getWindowWidth());
 	})
 });
@@ -178,13 +178,13 @@ $('.carousel .item').each(function(){
   next.children(':first-child').clone().appendTo($(this));
 
   if (next.next().length>0) {
- 
+
       next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
-      
+
   }
   else {
       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-     
+
   }
 
 });
