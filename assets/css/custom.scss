@@ -522,7 +522,6 @@ h5 {
 			box-shadow: 5px 5px 5px #2e2e2e;
 		}
 
-
 		h2 {
 			animation-name: fade-in;
 			animation-duration: 4s;
@@ -532,9 +531,6 @@ h5 {
 			width: 95%;
 			/*box-shadow: 5px 5px 5px #2e2e2e;*/
 			margin-bottom: 35px;
-
-			animation-name: fade-in;
-			animation-duration: 4s;
 		}
 
 		@keyframes slideExpandUp {
@@ -560,8 +556,11 @@ h5 {
 			&:last-child {
 				margin-top: 0;
 			}
+		}
+
+		.visible-values {
 			animation-name: slideExpandUp;
-			animation-duration: 4s;
+			animation-duration: 3s;
 		}
 
 		@include mobile {

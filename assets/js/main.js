@@ -31,6 +31,12 @@ $(document).ready(function() {
 			$("#code-img").show();
 	});
 
+	//scroll over core-values
+	window.addEventListener("scroll", Animation);
+		function Animation() {
+			$(".values:visible").addClass("visible-values");
+        }
+
 	//Hover over company portfolios
 		$(".company-port").hover(function(e) {
 			var time = 300;
